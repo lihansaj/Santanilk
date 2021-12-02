@@ -1,0 +1,100 @@
+#topNav{
+    background-color:black;
+    overflow: hidden;
+  }
+  #topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+#topNav a:hover{
+  background-color:rgb(124, 106, 58);
+}
+#topNav .active{
+background-color: rgb(167, 145, 86);
+ }
+
+
+
+ footer{
+  background-color:rgba(167, 145, 86,0.3);
+}
+table{
+  width:100%
+}
+th{
+  height:70px;
+  
+}
+td{
+  text-align: center;
+}
+
+.fa {
+
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:rgb(167, 145, 86);
+  color: white;
+}
+
+.fa-instagram {
+  background:rgb(167, 145, 86) ;
+  color: white;
+}
+
+
+
+
+ @media screen and (max-width: 500px) {
+     #topNav a{
+      float:justify;
+      display:block;
+      text-align: left;
+      color:black;
+      width: 100%;
+     
+    }
+    #topNav{
+        background-color:rgba(167, 145, 86,0.3);
+        overflow:hidden;
+    
+  }
+  #topNav a:hover{
+    background-color:grey;
+  }
+  #topNav .active{
+  background-color:rgb(167, 145, 86);
+   }
+   
+   
+  
+
+  
+}
+  
+#coversize{
+ 
+
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}

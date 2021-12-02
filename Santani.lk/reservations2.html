@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site about Santani hotel-reservations">
+        <title> Santani Resort-reservations</title>
+        <link rel="stylesheet" href="styles/cssheader.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/stylingpages.css">
+        <script src="scripts/reservations.js" ></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    
+    </head>
+    <body>
+        <center>
+          <a href="homepageee.html">
+            <img src="images/santaninew.png" alt= "logo" width="150" height="150"></center> </a>
+            <div id="topNav">
+    
+           <nav>
+                <a href="homepageee.html">Home</a>
+                <a href="accomodations.html">Accommodation</a>
+                <a href="Diningpage.html">Dining</a>
+                <a href="offersmain.html">Offers</a>
+                <a class ="active" href="reservations2.html">Reservations</a>
+                <a href="contactuspage.html">Contact Us</a>
+            </nav>
+        </div>
+        <br><br>
+        <main>
+            <article>
+                <header>
+                    <img src="images/Hotel-reception-1080x590.png" alt="cover-reservations" id="coversize">
+                    <h1>Reservations</h1>
+                </header>
+                <section>
+                    <center><h3>Why book on official online site?</h3></center>
+                    <div class="grid-image">
+                        <div><p><i class="material-icons r">bed</i>Widest choice of rooms and offers</p></div>
+                        <div><p><i class="material-icons r">redeem</i> Customized stays</p></div>
+                        <div><p><i class="material-icons r">smartphone</i>Online checking</p></div>
+                        <div><p><i class="material-icons r">public</i>International assistance</p></div>
+                      
+                      </div>
+
+                </section>
+             
+                  <br> <br>
+                <section>
+                
+                    <div class="row">
+                        <div class="col-75">
+                          <div class="container-res">
+                            <form>
+                            
+                              <div class="row-res">
+                                <div class="col-50">
+                                  <h3>YOUR STAY....</h3>
+                                  <label for="checkin"> Check-In</label>
+                                  <input type="date" id="date1" name="date1" required >
+                                  <label for="checkout">Check-Out</label>
+                                  <input type="date" id="date2" name="date2" required>
+                                  <label for="rromtype">Room Type</label>
+                                  <select id="room" name="room" required>
+                                    <option value="10000">Premier (Standard)</option>
+                                    <option value="10000">Family(Standard)</option>
+                                    <option value="15000">Royal(premium)</option>
+                                    <option value="20000">Deluxe(Deluxe)</option>
+                                    <option value="20000">Presidential(Deluxe)</option>
+                                    <option value="25000">Orchid(Suite)</option>
+                                    <option value="25000">Santani(Suite)</option>
+                                    
+  }
+                                  </select>
+                                  <label for="norroms">Number of Rooms</label>
+                                  <input type="number" id="ro" value="1" required>
+
+
+                              
+                                  <label for="roomno">Number of days</label>
+                                  <input type="number" id="days" value="1" required>
+
+
+                                  <label for="extr">Extra(optional)</label>
+                                      <select id="extra" name="extra" required>
+                                        <option value="">None</option>
+                                        <option value="1000">Cake On Arrival</option>
+                                        <option value="7000">Extra Bed</option>
+                                        <option value="5000">Candle Light Dinner(First Day)</option>
+                                      </select>
+                                      <label for="occupancy">Occupancy</label>
+                                      <select id="occ" name="occupancy" required>
+                                        <option value="1">one</option>
+                                        <option value="2">two</option>
+                                        <option value="3">three</option>
+                                      </select>
+
+                                      <label for="meal">Meal Type</label>
+                                      <select id="meal" name="meal" required>
+                                        <option value="3500">HB</option>
+                                        <option value="1500">BB</option>
+                                        <option value="5000">FB</option>
+                                      </select>
+                                     
+                                     
+
+                                      <!--<button type='button' id='shop-item-button'>Add to Reserve</button>
+                                      
+
+
+                                      <button type="button" onclick="someFunc()" >Get Selected Text</button>-->
+                                      <button type="button" class="new"onclick="someFunc()">Add to Reserve</button>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                      <button type="button" class="new"onclick="favRes()">Favourite Reserve</button>
+                                      <button type="button"class="new" onclick="addRes()">Add to Favourites</button>
+                                     
+                                     
+                                      
+                                    
+   
+                                    
+            
+                                  <h2>Current Reservation</h2>
+
+                                     <div>
+                                      <form id="myForm">
+                                      <ul type="null">
+                                      
+                                         
+                                      
+
+                                     Room type :<span class="output"></span> - <span class="output2"></span><br>
+                                     No of Rooms : <span id="demo2"></span><br>
+                                     Duration : <span id="demo"></span><br>
+                                     Extras :<span class="output4"></span> - <span class="output5"></span><br>
+                                     Occupancy :<span class="output6"></span><br>
+                                     Meal Type :<span class="output7"></span> - <span class="output8"></span><br>
+                                     Meal cost :<span class="result9"></span><br>
+                                     Room cost :<span class="result10"></span><br><br>
+                                     Total cost :<span class="result12"></span><br>
+                                     <br>
+                                       
+                                     <button type="button" class="new"onclick="reserve()">reserve </button>
+
+                                <button type="button" class="new" onclick="loyal()">check loyalty </button>
+
+                                <span class ="lo"></span> 
+                                     
+                                  </div>
+                                </form>
+
+                                <hr class="bod">
+                                 <p id="finalres"> <h4>The Grand Total (LKR) : <span id="firstValue">0</span></h4> </p> 
+                                
+                               
+                                </div>
+                            
+                                   
+                              
+                                <div class="col-50">
+                                  <h3>PERSONAL DETAILS</h3>
+                                  <label for="name">Name</label>
+                                  <input type="text" id="name" name="name" required>
+                                  <label for="num">Telephone Number</label>
+                                  <input type="number" id="num" name="num" required>
+                                  <label for="email">E-mail</label>
+                                  <input type="text" id="email" name="email" required>
+                                  <div class="row-res">
+                                  <div class="col-50">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address" required>
+                                  </div>
+                                  </div>
+                                  </div>
+                                </div> 
+                            
+                            </form>
+                          </div>
+                        </div>
+                        
+                              </form> 
+                             
+                                   
+                                   
+ 
+                    </section>
+               </article>
+           </main>
+          <footer>
+            <table>
+                <tr>
+                    <th>Santani</th>
+                    <th>About</th>
+                    <th>Policy</th>
+                </tr>
+                <tr>
+                    <td>Company Information </td>
+                    <td>About us</td>
+                    <td> Terms and Conditions</td>
+                </tr>
+                <tr>
+                    <td>Sustainabilty</td>
+                    <td>Careers</td>
+                    <td>Privacy policy</td>
+                </tr>
+                <tr>
+                    <td>FAQ</td>
+                    <td>Feedback</td>
+                </tr>
+               </table>
+
+               <table>
+                   <tr>
+                       
+                       
+                       <td><a href="https://www.facebook.com/santaniwellness/" class="fa fa-facebook"></a><a href="https://www.instagram.com/santani_wellness/?hl=en" class="fa fa-instagram"></a></td>
+                       
+                       
+                   </tr>
+                   <tr>
+                       <td> &reg; 2021 Santani. All rights reserved. The Sanatni name, logos, and related marks are trademarks of Santani.
+                       </td>
+                   </tr>
+               </table>
+               <!--images reference;
+               Hotel-reception-1080x590.png:-f4training.co.uk-->
+
+        </footer>
+        </body>
+    </html>
